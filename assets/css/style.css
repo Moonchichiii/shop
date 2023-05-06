@@ -140,12 +140,14 @@ section {
 
 select {
     border:none;
-    background-color: var(--upper-header-color);
+    background-color:var(--upper-header-color);
 }
 
-option {
-    position: absolute;
-    background-color: var(--link-text-color);
+option:checked {
+    border: none;
+    background-color: var(--lower-header-color);
+    color: var(--link-text-color);
+      
 }
 
 ::placeholder {
