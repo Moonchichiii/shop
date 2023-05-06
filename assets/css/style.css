@@ -3,8 +3,8 @@
 :root {
     /* background */
     --upper-header-color:#4E3883;
-    --lower-header-color:#7D3780
-    ;
+    --lower-header-color:#7D3780;
+    --main-color:rgba(0, 0, 0, 0.99);
     /* links & buttons */
     --button-bkg-color:#FFB600;
     --link-text-color:#FFFFFF;
@@ -12,6 +12,11 @@
 
     
     /* headings & text */
+    --primary-color:#FA2742;
+    --secondary-color:#9E15BF;
+    --thrid-color:#4AC6D2;
+
+
 
     /* */
 
@@ -39,6 +44,15 @@ body {
 
 }
 
+/* typograph */
+
+section h1 h2 h3 {
+    font-size: 2rem;
+    color: var(--thrid-color);
+    background-color: var(--thrid-color);
+    
+}
+
 
 /* header navigation */
 #currency-swapper {
@@ -62,6 +76,21 @@ nav ul li {
     
 
 }
+a {
+    display:inline-block;
+    width: min-content;
+    list-style: none;
+    text-decoration: none;
+    color: var(--link-text-color);
+    font-size: 1.2rem;
+}
+a:hover {
+    color:var(--link-hover-color);
+}
+a:active {
+    transition: ease-in-out 200ms;
+    transform: scale(1.9);
+}
 
 nav a {
     display: block;
@@ -69,7 +98,7 @@ nav a {
     list-style: none;
     text-decoration: none;
     color: var(--link-text-color);
-    font-size: larger;
+    font-size: 1.2rem;
     padding-left: 1%;
 }
 nav a:hover {
@@ -89,16 +118,19 @@ header {
 
 
 main {
-    background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249) 76.3%);
+    background-color: var(--main-color);
     width: 100%;
     height: 100vh;
 }
 
 section {
+    margin: 1% auto;
+    width: 100vh;
+    height: 90%;
     background-image: url("/assets/images/backgrounds/pexels-robin-1020372.jpg");
-    background-position: center center;
+    background-position:center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
     
 
@@ -106,11 +138,50 @@ section {
 
 /* components */
 
-#login {
-    width: 100%;
-    background-color: var(--lower-header-color);
+select {
+    border:none;
+    background-color: var(--upper-header-color);
 }
+
+option {
+    position: absolute;
+    background-color: var(--link-text-color);
+}
+
+::placeholder {
+    color: var(--link-hover-color);
+}
+
+
+
+#login li {
+    list-style: none;
+}
+
+#login a {
+    display: inline-block;
+    margin: 2% 2% auto;
+    text-align: right;
+    width: 80%;
+    height: fit-content;
+    list-style: none;
+    text-decoration: none;    
+    background-color: var    
+    (--upper-header-color);
+}
+
 .shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    justify-content: right;
+    height: fit-content;
 background-color: var(--lower-header-color);
+}
+
+
+
+i {
+    font-size:1.4rem;
 }
 /* @media */
