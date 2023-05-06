@@ -1,0 +1,101 @@
+/* Colors */
+
+:root {
+    /* background */
+    --upper-header-color:#4E3883;
+    --lower-header-color:#7D3780
+    ;
+    /* links & buttons */
+    --button-bkg-color:#FFB600;
+    --link-text-color:#FFFFFF;
+    --link-hover-color: 
+    
+    /* headings & text */
+
+    /* */
+
+    /* */
+
+    /* */
+}
+
+
+
+
+/* global styles */
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+/* header navigation */
+
+
+.nav-bar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display:inline-block;
+    width: auto;
+    
+
+}
+
+nav a {
+    display: block;
+    width: max-content;
+    list-style: none;
+    text-decoration: none;
+    color: var(--link-text-color);
+    font-size: larger;
+    padding-left: 1%;
+
+}
+
+/* main layout */
+header {
+    background-color: var(--upper-header-color);
+}
+
+
+main {
+    background: linear-gradient(88.8deg, rgb(239, 171, 245) 13.4%, rgb(196, 181, 249) 76.3%);
+    width: 100%;
+    height: 100vh;
+}
+
+section {
+    background-image: url("/assets/images/backgrounds/pexels-robin-1020372.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+
+/* main navigation */
+
+/* components */
+
+#login {
+    width: 100%;
+    background-color: var(--lower-header-color);
+}
+.shopping-cart {
+background-color: var(--lower-header-color);
+}
+/* @media */
